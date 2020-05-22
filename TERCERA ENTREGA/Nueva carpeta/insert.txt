@@ -1,0 +1,527 @@
+--PAISES------------------------------------------------------------------------------------------------------------------------
+insert into pais values (1,'Puerto Rico');
+insert into pais values (2,'USA');
+insert into pais values (3,'Australia');
+insert into pais values (4,'Colombia');
+insert into pais values (5,'Corea');
+insert into pais values (6,'Nueva Zelanda');
+insert into pais values (7,'Inglaterra');
+insert into pais values (8,'Francia');
+insert into pais values (9,'Escocia');
+insert into pais values (10,'Dinamarca');
+
+--CIUDADES----------------------------------------------------------------------------------------------------------------------
+insert into ciudad values (1,'San Juan',1);
+insert into ciudad values (2,'New York',2);
+insert into ciudad values (3,'Fontana',2);
+insert into ciudad values (4,'Bedford',2);
+insert into ciudad values (5,'Washington County',2);
+insert into ciudad values (6,'Sidney',3);
+insert into ciudad values (7,'Bogota',4);
+insert into ciudad values (8,'Philadelphia',2);
+insert into ciudad values (9,'Worcester',2);
+insert into ciudad values (10,'Daegu',5);
+insert into ciudad values (11,'Seul',5);
+insert into ciudad values (12,'Busan',5);
+insert into ciudad values (13,'Harrison',2);
+insert into ciudad values (14,'Cambridge',2);
+insert into ciudad values (15,'New Jersey',2);
+insert into ciudad values (16,'Denver',2);
+insert into ciudad values (17,'Raukokore',6);
+insert into ciudad values (18,'Londres',7);
+insert into ciudad values (19,'Hartford',2);
+insert into ciudad values (20,'Wellington',6);
+insert into ciudad values (21,'Sacramento',2);
+insert into ciudad values (22,'Los Angeles',2);
+insert into ciudad values (23,'Paris',8);
+insert into ciudad values (24,'San Diego',2);
+insert into ciudad values (25,'Reading',7);
+insert into ciudad values (26,'Romford',7);
+insert into ciudad values (27,'Glasgow',9);
+insert into ciudad values (28,'Knoxville',2);
+insert into ciudad values (29,'Norman',2);
+insert into ciudad values (30,'Shawnee',2);
+insert into ciudad values (31,'Dalby',3);
+insert into ciudad values (32,'San Quentin',8);
+
+--OCUPACIONES-------------------------------------------------------------------------------------------------------------------
+insert into ocupacion values (1,'Actor');
+insert into ocupacion values (2,'Artista');
+insert into ocupacion values (3,'Productor');
+insert into ocupacion values (4,'Guionista');
+insert into ocupacion values (5,'Actor de voz');
+insert into ocupacion values (6,'Modelo');
+insert into ocupacion values (7,'Activista');
+insert into ocupacion values (8,'Director cinematografico');
+insert into ocupacion values (9,'Escritor');
+insert into ocupacion values (10,'Cantante');
+insert into ocupacion values (11,'Animador');
+
+--CAUSAS FALLECIMIENTO----------------------------------------------------------------------------------------------------------
+insert into causa_fallecimiento values (1,'Desconocida');
+insert into causa_fallecimiento values (2,'Accidente');
+insert into causa_fallecimiento values (3,'Asesinato');
+insert into causa_fallecimiento values (4,'Enfermedad');
+insert into causa_fallecimiento values (5,'Condena');
+insert into causa_fallecimiento values (6,'Suicidio');
+insert into causa_fallecimiento values (7,'Eutanasia');
+
+
+--EDUCACION---------------------------------------------------------------------------------------------------------------------
+insert into educacion values (1,'En el hogar');
+insert into educacion values (2,'Crossroads School');
+insert into educacion values (3,'New York University');
+insert into educacion values (4,'George Washington University');
+insert into educacion values (5,'New York U. Film School');
+insert into educacion values (6,'Georgetown University');
+insert into educacion values (7,'Universidad Javeriana');
+insert into educacion values (8,'Yonsei University');
+insert into educacion values (9,'Busan Kyungsang College');
+insert into educacion values (10,'AFI Conservatory');
+insert into educacion values (11,'California Inst. of the Arts');
+insert into educacion values (12,'University of California');
+insert into educacion values (13,'St Johns College');
+insert into educacion values (14,'Harvard University');
+insert into educacion values (15,'HB Studio');
+insert into educacion values (16,'Belleville High School');
+insert into educacion values (17,'Victoria U. of Wellington');
+insert into educacion values (18,'Lee Strasberg TI');
+insert into educacion values (19,'Samuel Marsden');
+insert into educacion values (20,'Barnard College');
+insert into educacion values (21,'Brown University');
+insert into educacion values (22,'Vassar College');
+insert into educacion values (23,'Juilliard School');
+insert into educacion values (24,'Cambridge University');
+insert into educacion values (25,'Royal Cons. of Scotland');
+insert into educacion values (26,'Victoria U. of Manchester');
+insert into educacion values (27,'James Best Theatre Company');
+insert into educacion values (28,'LA Center for E. Studies');   
+insert into educacion values (29,'University of Missouri');
+insert into educacion values (30,'Somerset College');
+insert into educacion values (31,'ENSAD');
+
+--PERSONAS----------------------------------------------------------------------------------------------------------------------
+insert into persona values (100,'Jerson Osorio','M',to_date('23/03/2001','DD/MM/YYYY'),7,null,null,null,null);
+insert into persona values (101,'Bryan Santillan','M',to_date('14/07/2001','DD/MM/YYYY'),7,null,null,null,null);
+insert into persona values (102,'Esteban Villa','M',to_date('01/01/1996','DD/MM/YYYY'),7,null,null,null,null);
+insert into persona values (103,'Edwin Vesga','M',to_date('08/01/2002','DD/MM/YYYY'),7,null,null,null,null);
+insert into persona values (104,'Fabian Ajax','M',to_date('04/04/2001','DD/MM/YYYY'),7,null,null,null,null);
+insert into persona values (105,'Santiago Escobar','M',to_date('01/01/2001','DD/MM/YYYY'),7,null,null,null,null);
+insert into persona values (1,'Joaquin Phoenix','M',to_date('28/10/1974','DD/MM/YYYY'),1,null,null,null,null);
+insert into persona values (2,'Arlyn Dunetz', 'F',to_date('31/12/1944','DD/MM/YYYY'),2,null,null,null,null);
+insert into persona values (3,'John Lee Bottom','M',to_date('05/04/1947','DD/MM/YYYY') ,3,null,null,null,null);
+insert into persona values (4,'Liv Tyler', 'F',to_date('01/07/1977','DD/MM/YYYY'),2,null,null,null,null);
+insert into persona values (5,'Rooney Mara', 'F',to_date('17/04/1985','DD/MM/YYYY'),4,null,null,null,null);
+insert into persona values (6,'Robert Merrill Bottom', 'M', to_date('09/03/1917','DD/MM/YYYY'),5,to_date('01/10/1933','DD/MM/YYYY'),6,6,null);
+insert into persona values (7,'Todd Phillips','M',to_date('29/12/1970','DD/MM/YYYY'),2,null,null,null,null);--DIRECTOR, PRODUCERS, WRITTERS
+insert into persona values (8,'Bradley Cooper','M',to_date('05/01/1975','DD/MM/YYYY'),8,null,null,null,null);--PRODUCERS
+insert into persona values (9,'Emma Tillinger','F',to_date('15/04/1972','DD/MM/YYYY'),2,null,null,null,null);--PRODUCERS
+insert into persona values (10,'Scott Silver','M',to_date('30/11/1964','DD/MM/YYYY'),9,null,null,null,null);--WRITTERS
+insert into persona values (11,'Bong Joon-ho','M',to_date('14/09/1969','DD/MM/YYYY'),10,null,null,null,null);--DIRECTORS, PRODUCERS, WRITTERS
+insert into persona values (12,'Kwak Sin-ae','F',to_date('23/10/1968','DD/MM/YYYY'),11,null,null,null,null);--PRODUCERS
+insert into persona values (13,'Moon Yang-kwon','M',to_date('29/12/1968','DD/MM/YYYY'),11,null,null,null,null);--PRODUCERS
+insert into persona values (14,'Jang Young-hwan','M',to_date('18/01/1970','DD/MM/YYYY'),11,null,null,null,null);--PRODUCERS
+insert into persona values (15,'Song Kang-ho','M',to_date('17/01/1967','DD/MM/YYYY'),12,null,null,null,null);--ACTORS
+insert into persona values (16,'James Mangold','M',to_date('16/12/1963','DD/MM/YYYY'),2,null,null,null,null);--DIRECTORS, PRODUCERS
+insert into persona values (17,'Peter Chernin','M',to_date('29/05/1951','DD/MM/YYYY'),13,null,null,null,null);--PRODUCERS
+insert into persona values (18,'Jenno Topping','F',to_date('29/12/1970','DD/MM/YYYY'),2,null,null,null,null);--PRODUCERS
+insert into persona values (19,'Jez Butterworth','M',to_date('29/12/1970','DD/MM/YYYY'),18,null,null,null,null);--WRITTERS
+insert into persona values (20,'Matt Damon','M',to_date('08/10/1970','DD/MM/YYYY'),14,null,null,null,null);--ACTORS
+insert into persona values (21,'Martin Scorsese','M',to_date('17/11/1942','DD/MM/YYYY'),2,null,null,null,null);--DIRECTORS, PRODUCERS, WRITTERS
+insert into persona values (22,'Robert De Niro','M',to_date('17/08/1943','DD/MM/YYYY'),2,null,null,null,null);--ACTORS, PRODUCERS
+insert into persona values (23,'Al Pacino','M',to_date('25/04/1940','DD/MM/YYYY'),2,null,null,null,null);--ACTORS
+insert into persona values (24,'Joe Pesci','M',to_date('09/02/1943','DD/MM/YYYY'),15,null,null,null,null);--ACTORS
+insert into persona values (25,'Jane Rosenthal','F',to_date('21/09/1956','DD/MM/YYYY'),16,null,null,null,null);--PRODUCERS
+insert into persona values (26,'Taika Waititi','M',to_date('16/08/1975','DD/MM/YYYY'),17,null,null,null,null);--DIRECTORS, ACTORS, PRODUCERS
+insert into persona values (27,'Roman Griffin Davis','M',to_date('05/03/2007','DD/MM/YYYY'),18,null,null,null,null);--ACTORS
+insert into persona values (28,'Scarlett Johansson','F',to_date('02/11/1984','DD/MM/YYYY'),2,null,null,null,null);--ACTORS
+insert into persona values (29,'Christine Leunens','F',to_date('29/12/1964','DD/MM/YYYY'),19,null,null,null,null);--WRITTERS
+insert into persona values (30,'Thomasin McKenzie','F',to_date('29/12/1970','DD/MM/YYYY'),20,null,null,null,null);--ACTORS
+insert into persona values (31,'Greta Gerwig','F',to_date('04/08/1984','DD/MM/YYYY'),21,null,null,null,null);--DIRECTORS, WRITTERS
+insert into persona values (32,'Amy Pascal','F',to_date('25/03/1958','DD/MM/YYYY'),22,null,null,null,null);--PRODUCERS
+insert into persona values (33,'Saoirse Ronan','F',to_date('12/04/1970','DD/MM/YYYY'),2,null,null,null,null);--ACTORS
+insert into persona values (34,'Emma Watson','F',to_date('15/04/1990','DD/MM/YYYY'),23,null,null,null,null);--ACTORS
+insert into persona values (35,'Noah Baumbach','M',to_date('03/09/1969','DD/MM/YYYY'),2,null,null,null,null);--DIRECTORS, PRODUCERS, WRITTERS
+insert into persona values (36,'David Heyman','M',to_date('26/07/1961','DD/MM/YYYY'),18,null,null,null,null);--PRODUCERS
+insert into persona values (37,'Adam Driver','M',to_date('19/11/1983','DD/MM/YYYY'),24,null,null,null,null);--ACTORS
+insert into persona values (38,'Laura Dern','M',to_date('10/02/1967','DD/MM/YYYY'),22,null,null,null,null);--ACTORS
+insert into persona values (39,'Sam Mendes','M',to_date('01/08/1965','DD/MM/YYYY'),2,null,null,null,null);--DIRECTORS, PRODUCERS, WRITTERS
+insert into persona values (40,'George MacKay','M',to_date('13/03/1992','DD/MM/YYYY'),18,null,null,null,null);--ACTORS
+insert into persona values (41,'Dean-Charles Chapman','M',to_date('07/09/1997','DD/MM/YYYY'),26,null,null,null,null);--ACTORS
+insert into persona values (42,'Krysty Wilson-Cairns','F',to_date('29/05/1987','DD/MM/YYYY'),27,null,null,null,null);--WRITTERS
+insert into persona values (43,'Benedict Cumberbatch','M',to_date('19/07/1976','DD/MM/YYYY'),18,null,null,null,null);--ACTORS
+insert into persona values (44,'Quentin Tarantino','M',to_date('27/03/1963','DD/MM/YYYY'),28,null,null,null,null);--DIRECTORS, WRITTERS, PRODUCERS
+insert into persona values (45,'Shanon McIntosh','F',to_date('27/10/1965','DD/MM/YYYY'),29,null,null,null,null);--PRODUCERS
+insert into persona values (46,'Leonardo DiCaprio','M',to_date('11/11/1974','DD/MM/YYYY'),22,null,null,null,null);--ACTORS
+insert into persona values (47,'Brad Pitt','M',to_date('18/12/1968','DD/MM/YYYY'),30,null,null,null,null);--ACTORS
+insert into persona values (48,'Margot Robbie','f',to_date('02/07/1990','DD/MM/YYYY'),31,null,null,null,null);--ACTORS
+insert into persona values (49,'Jérémy Clapin','M',to_date('13/02/1974','DD/MM/YYYY'),23,null,null,null,null);--DIRECTORS
+insert into persona values (50,'Marc du Pontavice','F',to_date('10/01/1963','DD/MM/YYYY'),23,null,null,null,null);--PRODUCERS
+insert into persona values (51,'Guillaume Laurant','M',to_date('22/11/1961','DD/MM/YYYY'),32,null,null,null,null);--WRITTERS
+
+--NACIONALIDADES----------------------------------------------------------------------------------------------------------------
+insert into nacionalidad values (1,1);
+insert into nacionalidad values (1,2);
+insert into nacionalidad values (2,2);
+insert into nacionalidad values (3,2);
+insert into nacionalidad values (4,2);
+insert into nacionalidad values (5,2);
+insert into nacionalidad values (6,2);
+insert into nacionalidad values (7,2);
+insert into nacionalidad values (8,2);
+insert into nacionalidad values (9,1);
+insert into nacionalidad values (10,2);
+insert into nacionalidad values (11,5);
+insert into nacionalidad values (12,5);
+insert into nacionalidad values (13,5);
+insert into nacionalidad values (14,5);
+insert into nacionalidad values (15,5);
+insert into nacionalidad values (16,2);
+insert into nacionalidad values (17,2);
+insert into nacionalidad values (18,2);
+insert into nacionalidad values (19,7);
+insert into nacionalidad values (20,2);
+insert into nacionalidad values (21,2);
+insert into nacionalidad values (22,2);
+insert into nacionalidad values (23,2);
+insert into nacionalidad values (24,2);
+insert into nacionalidad values (25,2);
+insert into nacionalidad values (26,6);
+insert into nacionalidad values (27,7);
+insert into nacionalidad values (28,2);
+insert into nacionalidad values (28,10);
+insert into nacionalidad values (29,2);
+insert into nacionalidad values (29,6);
+insert into nacionalidad values (30,6);
+insert into nacionalidad values (31,2);
+insert into nacionalidad values (32,2);
+insert into nacionalidad values (33,2);
+insert into nacionalidad values (34,7);
+insert into nacionalidad values (35,2);
+insert into nacionalidad values (36,7);
+insert into nacionalidad values (37,2);
+insert into nacionalidad values (38,2);
+insert into nacionalidad values (39,7);
+insert into nacionalidad values (40,7);
+insert into nacionalidad values (41,7);
+insert into nacionalidad values (42,9);
+insert into nacionalidad values (43,7);
+insert into nacionalidad values (44,2);
+insert into nacionalidad values (45,2);
+insert into nacionalidad values (46,2);
+insert into nacionalidad values (47,2);
+insert into nacionalidad values (48,3);
+insert into nacionalidad values (49,8);
+insert into nacionalidad values (50,8);
+insert into nacionalidad values (51,8);
+
+--OCUPACIONESXPERSONAS----------------------------------------------------------------------------------------------------------
+
+insert into ocupacionxpersona values (1,1);
+insert into ocupacionxpersona values (1,2);
+insert into ocupacionxpersona values (1,3);
+insert into ocupacionxpersona values (1,4);
+insert into ocupacionxpersona values (1,5);
+insert into ocupacionxpersona values (2,7);
+insert into ocupacionxpersona values (4,1);
+insert into ocupacionxpersona values (4,6);
+insert into ocupacionxpersona values (5,1);
+insert into ocupacionxpersona values (7,1);
+insert into ocupacionxpersona values (7,3);
+insert into ocupacionxpersona values (7,4);
+insert into ocupacionxpersona values (7,8);
+insert into ocupacionxpersona values (8,1);
+insert into ocupacionxpersona values (8,3);
+insert into ocupacionxpersona values (9,3);
+insert into ocupacionxpersona values (10,4);
+insert into ocupacionxpersona values (10,9);
+insert into ocupacionxpersona values (11,8);
+insert into ocupacionxpersona values (12,3);
+insert into ocupacionxpersona values (13,3);
+insert into ocupacionxpersona values (14,3);
+insert into ocupacionxpersona values (15,1);
+insert into ocupacionxpersona values (16,3);
+insert into ocupacionxpersona values (16,8);
+insert into ocupacionxpersona values (17,3);
+insert into ocupacionxpersona values (18,3);
+insert into ocupacionxpersona values (19,4);
+insert into ocupacionxpersona values (20,1);
+insert into ocupacionxpersona values (21,3);
+insert into ocupacionxpersona values (21,4);
+insert into ocupacionxpersona values (21,8);
+insert into ocupacionxpersona values (21,9);
+insert into ocupacionxpersona values (22,1);
+insert into ocupacionxpersona values (22,3);
+insert into ocupacionxpersona values (23,1);
+insert into ocupacionxpersona values (23,3);
+insert into ocupacionxpersona values (24,1);
+insert into ocupacionxpersona values (25,3);
+insert into ocupacionxpersona values (26,1);
+insert into ocupacionxpersona values (26,2);
+insert into ocupacionxpersona values (26,3);
+insert into ocupacionxpersona values (26,4);
+insert into ocupacionxpersona values (26,8);
+insert into ocupacionxpersona values (27,1);
+insert into ocupacionxpersona values (28,1);
+insert into ocupacionxpersona values (28,10);
+insert into ocupacionxpersona values (29,9);
+insert into ocupacionxpersona values (30,1);
+insert into ocupacionxpersona values (31,8);
+insert into ocupacionxpersona values (31,4);
+insert into ocupacionxpersona values (32,3);
+insert into ocupacionxpersona values (33,1);
+insert into ocupacionxpersona values (34,1);
+insert into ocupacionxpersona values (34,6);
+insert into ocupacionxpersona values (34,7);
+insert into ocupacionxpersona values (35,3);
+insert into ocupacionxpersona values (35,4);
+insert into ocupacionxpersona values (35,8);
+insert into ocupacionxpersona values (36,3);
+insert into ocupacionxpersona values (37,1);
+insert into ocupacionxpersona values (38,1);
+insert into ocupacionxpersona values (38,3);
+insert into ocupacionxpersona values (38,8);
+insert into ocupacionxpersona values (39,3);
+insert into ocupacionxpersona values (39,4);
+insert into ocupacionxpersona values (39,8);
+insert into ocupacionxpersona values (40,1);
+insert into ocupacionxpersona values (41,1);
+insert into ocupacionxpersona values (42,4);
+insert into ocupacionxpersona values (43,1);
+insert into ocupacionxpersona values (44,1);
+insert into ocupacionxpersona values (44,3);
+insert into ocupacionxpersona values (44,4);
+insert into ocupacionxpersona values (44,8);
+insert into ocupacionxpersona values (45,3);
+insert into ocupacionxpersona values (46,1);
+insert into ocupacionxpersona values (46,3);
+insert into ocupacionxpersona values (46,6);
+insert into ocupacionxpersona values (47,1);
+insert into ocupacionxpersona values (47,3);
+insert into ocupacionxpersona values (48,1);
+insert into ocupacionxpersona values (48,3);
+insert into ocupacionxpersona values (49,3);
+insert into ocupacionxpersona values (49,8);
+insert into ocupacionxpersona values (49,11);
+insert into ocupacionxpersona values (50,3);
+insert into ocupacionxpersona values (50,11);
+insert into ocupacionxpersona values (51,4);
+
+--CAUSASFALLECIMIENTOXPERSONAS--------------------------------------------------------------------------------------------------
+insert into causasxpersona values (6,1);
+
+--EDUCACIONXPERSONAS------------------------------------------------------------------------------------------------------------
+insert into educacionxpersona values (4,2);
+insert into educacionxpersona values (5,3);
+insert into educacionxpersona values (5,4);
+insert into educacionxpersona values (7,5);
+insert into educacionxpersona values (8,7);
+insert into educacionxpersona values (10,10);
+insert into educacionxpersona values (11,8);
+insert into educacionxpersona values (15,9);
+insert into educacionxpersona values (16,11);
+insert into educacionxpersona values (17,12);
+insert into educacionxpersona values (19,13);
+insert into educacionxpersona values (20,14);
+insert into educacionxpersona values (21,3);
+insert into educacionxpersona values (22,15);
+insert into educacionxpersona values (23,15);
+insert into educacionxpersona values (24,16);
+insert into educacionxpersona values (26,17);
+insert into educacionxpersona values (28,18);
+insert into educacionxpersona values (29,17);
+insert into educacionxpersona values (30,20);
+insert into educacionxpersona values (31,20);
+insert into educacionxpersona values (32,12);
+insert into educacionxpersona values (34,21);
+insert into educacionxpersona values (35,22);
+insert into educacionxpersona values (36,14);
+insert into educacionxpersona values (37,23);
+insert into educacionxpersona values (39,24);
+insert into educacionxpersona values (42,25);
+insert into educacionxpersona values (43,26);
+insert into educacionxpersona values (44,27);
+insert into educacionxpersona values (46,28);
+insert into educacionxpersona values (47,29);
+insert into educacionxpersona values (48,30);
+insert into educacionxpersona values (49,27);
+
+--PADRESXHIJOS------------------------------------------------------------------------------------------------------------------
+insert into padrexhijo values (2,1);
+insert into padrexhijo values (3,1);
+insert into padrexhijo values (6,3);
+
+--PAREJAS-----------------------------------------------------------------------------------------------------------------------
+insert into pareja values (1,2,3,1968,1997,'I');
+insert into pareja values (2,1,4,1995,1998,'I');
+insert into pareja values (3,1,5,2016,null,'A');
+
+--CATEGORIAS--------------------------------------------------------------------------------------------------------------------
+insert into categoria values (1,'Best Picture');
+insert into categoria values (2,'Actors');
+insert into categoria values (3,'Casting Directors');
+insert into categoria values (4,'Cinematographers');
+insert into categoria values (5,'Costume Designers');
+insert into categoria values (6,'Designers');
+insert into categoria values (7,'Director');
+insert into categoria values (8,'Documentary');
+insert into categoria values (9,'Executives');
+insert into categoria values (10,'Film Editors');
+insert into categoria values (11,'Make-up Artist and Hairstylist');
+insert into categoria values (12,'Music');
+insert into categoria values (13,'Producers');
+insert into categoria values (14,'Public Relations');
+insert into categoria values (15,'Short Films and Animation');
+insert into categoria values (16,'Sound');
+insert into categoria values (17,'Visual Effects');
+insert into categoria values (18,'Writters');
+
+--PELICULAS---------------------------------------------------------------------------------------------------------------------
+insert into pelicula values (1,'JOKER',to_date('04/10/2019','dd/mm/yyyy'),2019,122,8.5);
+insert into pelicula values (2,'PARASITE',to_date('30/05/2019','dd/mm/yyyy'),2019,132,8.6);
+insert into pelicula values (3,'FORD V FERRARI',to_date('15/11/2019','dd/mm/yyyy'),2019,152,8.1);
+insert into pelicula values (4,'THE IRISHMAN',to_date('01/11/2019','dd/mm/yyyy'),2019,209,7.9);
+insert into pelicula values (5,'JOJO RABBIT',to_date('18/10/2019','dd/mm/yyyy'),2019,108,7.9);
+insert into pelicula values (6,'LITTLE WOMEN',to_date('25/12/2019','dd/mm/yyyy'),2019,135,7.9);
+insert into pelicula values (7,'MARRIAGE STORY',to_date('15/11/2019','dd/mm/yyyy'),2019,137,8.0);
+insert into pelicula values (8,'1917',to_date('25/12/2019','dd/mm/yyyy'),2019,119,8.3);
+insert into pelicula values (9,'ONCE UPON A TIME IN HOLLYWOOD',to_date('26/07/2019','dd/mm/yyyy'),2019,161,7.7);
+insert into pelicula values (10,'I LOST MY BODY',to_date('06/11/2019','dd/mm/yyyy'),2019,81,7.6);
+
+--MIEMBROS Y MIEMBROSXCATEGORIA----------------------------------------------------------------------------------------------------------------------
+insert into miembro values (100,'I');
+insert into miembro values (101,'I');
+insert into miembro values (102,'I');
+insert into miembro values (103,'I');
+insert into miembro values (104,'I');
+insert into miembro values (105,'I');
+insert into miembroxcategoria values (100,2,2019);
+insert into miembroxcategoria values (101,7,2019);
+insert into miembroxcategoria values (102,13,2019);
+insert into miembroxcategoria values (103,18,2019);
+insert into miembroxcategoria values (104,2,2019);
+insert into miembroxcategoria values (105,7,2019);
+insert into miembro values (1,'N');
+insert into miembro values (7,'N');
+insert into miembro values (10,'N');
+insert into miembroxcategoria values (1,2,2019);
+insert into miembroxcategoria values (7,7,2019);
+insert into miembroxcategoria values (10,18,2019);
+insert into miembro values (11,'N');
+insert into miembro values (15,'N');
+insert into miembroxcategoria values (11,7,2019);
+insert into miembroxcategoria values (15,2,2019);
+insert into miembro values (16,'N');
+insert into miembro values (19,'N');
+insert into miembro values (20,'N');
+insert into miembroxcategoria values (16,7,2019);
+insert into miembroxcategoria values (19,18,2019);
+insert into miembroxcategoria values (20,2,2019);
+insert into miembro values (21,'N');
+insert into miembro values (22,'N');
+insert into miembro values (23,'N');
+insert into miembro values (24,'N');
+insert into miembroxcategoria values (21,7,2019);
+insert into miembroxcategoria values (22,2,2019);
+insert into miembroxcategoria values (23,2,2019);
+insert into miembroxcategoria values (24,2,2019);
+insert into miembro values (26,'N');
+insert into miembro values (28,'N');
+insert into miembroxcategoria values (26,7,2019);
+insert into miembroxcategoria values (28,2,2019);
+insert into miembro values (31,'N');
+insert into miembroxcategoria values (31,7,2019);
+insert into miembro values (35,'N');
+insert into miembro values (37,'N');
+insert into miembroxcategoria values (35,7,2019);
+insert into miembroxcategoria values (37,2,2019);
+insert into miembro values (39,'N');
+insert into miembroxcategoria values (39,7,2019);
+insert into miembro values (44,'N');
+insert into miembro values (46,'N');
+insert into miembro values (47,'N');
+insert into miembroxcategoria values (44,7,2019);
+insert into miembroxcategoria values (46,2,2019);
+insert into miembroxcategoria values (47,2,2019);
+insert into miembro values (49,'N');
+insert into miembro values (50,'N');
+insert into miembroxcategoria values (49,7,2019);
+insert into miembroxcategoria values (50,13,2019);
+
+--EQUIPOSXPELICULAS-------------------------------------------------------------------------------------------------------------
+--EQUIPO JOKER------------------------------------------------------------------------------------------------------------------
+insert into equipo_pelicula values (1,1,2);
+insert into equipo_pelicula values (7,1,7);
+insert into equipo_pelicula values (7,1,13);
+insert into equipo_pelicula values (7,1,18);
+insert into equipo_pelicula values (8,1,13);
+insert into equipo_pelicula values (9,1,13);
+insert into equipo_pelicula values (10,1,18);
+--EQUIPO PARASITE---------------------------------------------------------------------------------------------------------------
+insert into equipo_pelicula values (11,2,7);
+insert into equipo_pelicula values (11,2,13);
+insert into equipo_pelicula values (11,2,18);
+insert into equipo_pelicula values (12,2,13);
+insert into equipo_pelicula values (13,2,13);
+insert into equipo_pelicula values (14,2,13);
+insert into equipo_pelicula values (15,2,2);
+--EQUIPO FORD V FERRARI---------------------------------------------------------------------------------------------------------
+insert into equipo_pelicula values (16,3,7);
+insert into equipo_pelicula values (16,3,13);
+insert into equipo_pelicula values (17,3,13);
+insert into equipo_pelicula values (18,3,13);
+insert into equipo_pelicula values (19,3,18);
+insert into equipo_pelicula values (20,3,2);
+--EQUIPO THE IRISHMAN-----------------------------------------------------------------------------------------------------------
+insert into equipo_pelicula values (21,4,7);
+insert into equipo_pelicula values (21,4,13);
+insert into equipo_pelicula values (21,4,18);
+insert into equipo_pelicula values (22,4,2);
+insert into equipo_pelicula values (22,4,13);
+insert into equipo_pelicula values (23,4,2);
+insert into equipo_pelicula values (24,4,2);
+insert into equipo_pelicula values (25,4,13);
+--EQUIPO JOJO RABBIT------------------------------------------------------------------------------------------------------------
+insert into equipo_pelicula values (26,5,2);
+insert into equipo_pelicula values (26,5,7);
+insert into equipo_pelicula values (26,5,13);
+insert into equipo_pelicula values (27,5,2);
+insert into equipo_pelicula values (28,5,2);
+insert into equipo_pelicula values (29,5,18);
+insert into equipo_pelicula values (30,5,2);
+--EQUIPO LITTLE WOMEN-----------------------------------------------------------------------------------------------------------
+insert into equipo_pelicula values (31,6,7);
+insert into equipo_pelicula values (31,6,18);
+insert into equipo_pelicula values (32,6,13);
+insert into equipo_pelicula values (33,6,2);
+insert into equipo_pelicula values (34,6,2);
+--EQUIPO MARRIAGE STORY---------------------------------------------------------------------------------------------------------
+insert into equipo_pelicula values (35,7,7);
+insert into equipo_pelicula values (35,7,13);
+insert into equipo_pelicula values (35,7,18);
+insert into equipo_pelicula values (36,7,13);
+insert into equipo_pelicula values (37,7,2);
+insert into equipo_pelicula values (38,7,2);
+insert into equipo_pelicula values (38,6,2);
+insert into equipo_pelicula values (28,6,2);
+--EQUIPO 1917-------------------------------------------------------------------------------------------------------------------
+insert into equipo_pelicula values (39,8,7);
+insert into equipo_pelicula values (39,8,13);
+insert into equipo_pelicula values (39,8,18);
+insert into equipo_pelicula values (40,8,2);
+insert into equipo_pelicula values (41,8,18);
+insert into equipo_pelicula values (42,8,18);
+insert into equipo_pelicula values (43,8,2);
+--EQUIPO ONCE UPON A TIME IN HOLLYWOOD------------------------------------------------------------------------------------------
+insert into equipo_pelicula values (36,9,13);
+insert into equipo_pelicula values (44,9,7);
+insert into equipo_pelicula values (44,9,13);
+insert into equipo_pelicula values (44,9,18);
+insert into equipo_pelicula values (45,9,13);
+insert into equipo_pelicula values (46,9,2);
+insert into equipo_pelicula values (47,9,2);
+insert into equipo_pelicula values (48,9,2);
+--EQUIPO I LOST MY BODY---------------------------------------------------------------------------------------------------------
+insert into equipo_pelicula values (49,10,7);
+insert into equipo_pelicula values (50,10,13);
+insert into equipo_pelicula values (51,10,18);

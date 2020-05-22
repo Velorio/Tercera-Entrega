@@ -1,0 +1,12 @@
+drop table pais cascade constraints;
+drop table ciudad cascade constraints;
+drop table ocupacion cascade constraints;
+drop table causa_fallecimiento cascade constraints;
+drop table educacion cascade constraints;
+drop table persona cascade constraints;
+drop table nacionalidad cascade constraints;
+drop table ocupacionxpersona cascade constraints;
+drop table causasxpersona cascade constraints;
+drop table educacionxpersona cascade constraints;
+drop table padrexhijo cascade constraints;
+drop table pareja cascade constraints;

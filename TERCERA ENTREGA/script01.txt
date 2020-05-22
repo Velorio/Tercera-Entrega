@@ -1,0 +1,207 @@
+drop table pais cascade constraints;
+drop table ciudad cascade constraints;
+drop table ocupacion cascade constraints;
+drop table causa_fallecimiento cascade constraints;
+drop table educacion cascade constraints;
+drop table persona cascade constraints;
+drop table nacionalidad cascade constraints;
+drop table ocupacionxpersona cascade constraints;
+drop table causasxpersona cascade constraints;
+drop table educacionxpersona cascade constraints;
+drop table padrexhijo cascade constraints;
+drop table pareja cascade constraints;
+
+/*********************************************************/
+
+create table pais(
+    codigo_pais int not null,
+    nombre_pais varchar(30),
+    primary key (codigo_pais)
+);
+
+create table ciudad(
+    codigo_ciudad int not null,
+    nombre_ciudad varchar(30),
+    codigo_pais int,
+    primary key (codigo_ciudad),
+    foreign key (codigo_pais) references pais
+);
+
+create table ocupacion(
+    codigo_ocupacion int not null,
+    nombre_ocupacion varchar(40),
+    primary key (codigo_ocupacion)
+);
+
+create table causa_fallecimiento(
+    codigo_causa int not null,
+    descripcion varchar(40),
+    primary key (codigo_causa)
+);
+
+create table educacion(
+    codigo_educacion int not null,
+    institucion varchar(30),
+    primary key (codigo_educacion)
+);
+
+create table persona(
+    codigo_persona int not null,
+    nombre_nacimiento varchar(30),
+    genero char,
+    fecha_nacimiento date,
+    lugar_nacimiento int,
+    fecha_fallecimiento date,
+    lugar_fallecimiento int,
+    lugar_sepultura int,
+    foto blob,
+    primary key (codigo_persona),
+    foreign key (lugar_nacimiento) references ciudad (codigo_ciudad),
+    foreign key (lugar_fallecimiento) references ciudad (codigo_ciudad),
+    foreign key (lugar_sepultura) references ciudad (codigo_ciudad)
+);
+
+create table nacionalidad(
+    codigo_persona int,
+    codigo_pais int,
+    foreign key (codigo_persona) references persona,
+    foreign key (codigo_pais) references pais
+);
+
+create table ocupacionxpersona(
+    codigo_persona int,
+    codigo_ocupacion int,
+    foreign key (codigo_persona) references persona,
+    foreign key (codigo_ocupacion) references ocupacion
+);
+
+create table causasxpersona(
+    codigo_persona int,
+    codigo_causa int,
+    foreign key (codigo_persona) references persona,
+    foreign key (codigo_causa) references causa_fallecimiento
+);
+
+create table educacionxpersona(
+    codigo_persona int,
+    codigo_educacion int,
+    foreign key (codigo_persona) references persona,
+    foreign key (codigo_educacion) references educacion
+);
+
+create table padrexhijo(
+    codigo_padre int,
+    codigo_hijo int,
+    foreign key (codigo_padre) references persona (codigo_persona),
+    foreign key (codigo_hijo) references persona (codigo_persona)
+);
+
+create table pareja(
+    codigo_pareja int,
+    persona_1 int,
+    persona_2 int,
+    inicio_relacion int,
+    fin_relacion int,
+    estado_relacion char,
+    primary key (codigo_pareja),
+    foreign key (persona_1) references persona (codigo_persona),
+    foreign key (persona_2) references persona (codigo_persona)
+);
+
+/*****************************************************************************************/
+
+insert into pais values (1,'Puerto Rico');
+insert into pais values (2,'USA');
+insert into pais values (3,'Australia');
+
+select * from pais;
+
+insert into ciudad values (1,'San Juan',1);
+insert into ciudad values (2,'New York',2);
+insert into ciudad values (3,'Fontana',2);
+insert into ciudad values (4,'Bedford',2);
+insert into ciudad values (5,'Washington County',2);
+insert into ciudad values (6,'Sidney',3);
+
+select * from ciudad;
+
+insert into ocupacion values (1,'Actor');
+insert into ocupacion values (2,'Artista');
+insert into ocupacion values (3,'Productor');
+insert into ocupacion values (4,'Guionista');
+insert into ocupacion values (5,'Actor de voz');
+insert into ocupacion values (6,'Modelo');
+insert into ocupacion values (7,'Activista');
+
+select * from ocupacion;
+
+insert into causa_fallecimiento values (1,'Desconocida');
+insert into causa_fallecimiento values (2,'Accidente');
+insert into causa_fallecimiento values (3,'Asesinato');
+insert into causa_fallecimiento values (4,'Enfermedad');
+insert into causa_fallecimiento values (5,'Condena');
+insert into causa_fallecimiento values (6,'Suicidio');
+insert into causa_fallecimiento values (7,'Eutanasia');
+
+select * from causa_fallecimiento;
+
+insert into educacion values (1,'En el hogar');
+insert into educacion values (2,'Crossroads School');
+insert into educacion values (3,'New York University');
+insert into educacion values (4,'George Washington University');
+
+select * from educacion;
+
+insert into persona values (1,'Joaquin Phoenix','M',to_date('28/10/1974','DD/MM/YYYY'),1,null,null,null,null);
+insert into persona values (2,'Arlyn Dunetz', 'F',to_date('31/12/1944','DD/MM/YYYY'),2,null,null,null,null);
+insert into persona values (3,'John Lee Bottom','M',to_date('05/04/1947','DD/MM/YYYY') ,3,null,null,null,null);
+insert into persona values (4,'Liv Tyler', 'F',to_date('01/07/1977','DD/MM/YYYY'),2,null,null,null,null);
+insert into persona values (5,'Rooney Mara', 'F',to_date('17/04/1985','DD/MM/YYYY'),4,null,null,null,null);
+insert into persona values (6,'Robert Merrill Bottom', 'M', to_date('09/03/1917','DD/MM/YYYY'),5,to_date('01/10/1933','DD/MM/YYYY'),6,6,null);
+
+select * from persona;
+
+insert into nacionalidad values (1,1);
+insert into nacionalidad values (1,2);
+insert into nacionalidad values (2,2);
+insert into nacionalidad values (3,2);
+insert into nacionalidad values (4,2);
+insert into nacionalidad values (5,2);
+insert into nacionalidad values (6,2);
+
+select * from nacionalidad;
+
+insert into ocupacionxpersona values (1,1);
+insert into ocupacionxpersona values (1,2);
+insert into ocupacionxpersona values (1,3);
+insert into ocupacionxpersona values (1,4);
+insert into ocupacionxpersona values (1,5);
+insert into ocupacionxpersona values (2,7);
+insert into ocupacionxpersona values (4,1);
+insert into ocupacionxpersona values (4,6);
+insert into ocupacionxpersona values (5,1);
+
+select * from ocupacionxpersona;
+
+insert into causasxpersona values (6,1);
+
+select * from causasxpersona;
+
+insert into educacionxpersona values (4,2);
+insert into educacionxpersona values (5,3);
+insert into educacionxpersona values (5,4);
+
+select * from educacionxpersona;
+
+insert into padrexhijo values (2,1);
+insert into padrexhijo values (3,1);
+insert into padrexhijo values (6,3);
+
+select * from padrexhijo;
+
+insert into pareja values (1,2,3,1968,1997,'I');
+insert into pareja values (2,1,4,1995,1998,'I');
+insert into pareja values (3,1,5,2016,null,'A');
+
+select * from pareja;
+

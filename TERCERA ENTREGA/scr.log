@@ -1,0 +1,178 @@
+Oracle SQL Developer Data Modeler 19.2.0.182.1216
+Oracle SQL Developer Data Modeler Log de Importación
+Fecha y Hora: 2020-05-20 18:51:05 COT
+Nombre de Diseño: Sin título_1
+RDBMS : Oracle Database 12cR2
+
+		Todas las Sentencias: 		95
+		Sentencias Importadas: 	12
+		Sentencias Fallidas: 		0
+		Sentencias No Reconocidas: 	83
+
+<<<<< No Reconocido >>>>>
+drop table pais cascade constraints
+
+drop table ciudad cascade constraints
+
+drop table ocupacion cascade constraints
+
+drop table causa_fallecimiento cascade constraints
+
+drop table educacion cascade constraints
+
+drop table persona cascade constraints
+
+drop table nacionalidad cascade constraints
+
+drop table ocupacionxpersona cascade constraints
+
+drop table causasxpersona cascade constraints
+
+drop table educacionxpersona cascade constraints
+
+drop table padrexhijo cascade constraints
+
+drop table pareja cascade constraints
+
+insert into pais values (1,'Puerto Rico')
+
+insert into pais values (2,'USA')
+
+insert into pais values (3,'Australia')
+
+select * from pais
+
+insert into ciudad values (1,'San Juan',1)
+
+insert into ciudad values (2,'New York',2)
+
+insert into ciudad values (3,'Fontana',2)
+
+insert into ciudad values (4,'Bedford',2)
+
+insert into ciudad values (5,'Washington County',2)
+
+insert into ciudad values (6,'Sidney',3)
+
+select * from ciudad
+
+insert into ocupacion values (1,'Actor')
+
+insert into ocupacion values (2,'Artista')
+
+insert into ocupacion values (3,'Productor')
+
+insert into ocupacion values (4,'Guionista')
+
+insert into ocupacion values (5,'Actor de voz')
+
+insert into ocupacion values (6,'Modelo')
+
+insert into ocupacion values (7,'Activista')
+
+select * from ocupacion
+
+insert into causa_fallecimiento values (1,'Desconocida')
+
+insert into causa_fallecimiento values (2,'Accidente')
+
+insert into causa_fallecimiento values (3,'Asesinato')
+
+insert into causa_fallecimiento values (4,'Enfermedad')
+
+insert into causa_fallecimiento values (5,'Condena')
+
+insert into causa_fallecimiento values (6,'Suicidio')
+
+insert into causa_fallecimiento values (7,'Eutanasia')
+
+select * from causa_fallecimiento
+
+insert into educacion values (1,'En el hogar')
+
+insert into educacion values (2,'Crossroads School')
+
+insert into educacion values (3,'New York University')
+
+insert into educacion values (4,'George Washington University')
+
+select * from educacion
+
+insert into persona values (1,'Joaquin Phoenix','M',to_date('28/10/1974','DD/MM/YYYY'),1,null,null,null,null)
+
+insert into persona values (2,'Arlyn Dunetz', 'F',to_date('31/12/1944','DD/MM/YYYY'),2,null,null,null,null)
+
+insert into persona values (3,'John Lee Bottom','M',to_date('05/04/1947','DD/MM/YYYY') ,3,null,null,null,null)
+
+insert into persona values (4,'Liv Tyler', 'F',to_date('01/07/1977','DD/MM/YYYY'),2,null,null,null,null)
+
+insert into persona values (5,'Rooney Mara', 'F',to_date('17/04/1985','DD/MM/YYYY'),4,null,null,null,null)
+
+insert into persona values (6,'Robert Merrill Bottom', 'M', to_date('09/03/1917','DD/MM/YYYY'),5,to_date('01/10/1933','DD/MM/YYYY'),6,6,null)
+
+select * from persona
+
+insert into nacionalidad values (1,1)
+
+insert into nacionalidad values (1,2)
+
+insert into nacionalidad values (2,2)
+
+insert into nacionalidad values (3,2)
+
+insert into nacionalidad values (4,2)
+
+insert into nacionalidad values (5,2)
+
+insert into nacionalidad values (6,2)
+
+select * from nacionalidad
+
+insert into ocupacionxpersona values (1,1)
+
+insert into ocupacionxpersona values (1,2)
+
+insert into ocupacionxpersona values (1,3)
+
+insert into ocupacionxpersona values (1,4)
+
+insert into ocupacionxpersona values (1,5)
+
+insert into ocupacionxpersona values (2,7)
+
+insert into ocupacionxpersona values (4,1)
+
+insert into ocupacionxpersona values (4,6)
+
+insert into ocupacionxpersona values (5,1)
+
+select * from ocupacionxpersona
+
+insert into causasxpersona values (6,1)
+
+select * from causasxpersona
+
+insert into educacionxpersona values (4,2)
+
+insert into educacionxpersona values (5,3)
+
+insert into educacionxpersona values (5,4)
+
+select * from educacionxpersona
+
+insert into padrexhijo values (2,1)
+
+insert into padrexhijo values (3,1)
+
+insert into padrexhijo values (6,3)
+
+select * from padrexhijo
+
+insert into pareja values (1,2,3,1968,1997,'I')
+
+insert into pareja values (2,1,4,1995,1998,'I')
+
+insert into pareja values (3,1,5,2016,null,'A')
+
+select * from pareja
+
